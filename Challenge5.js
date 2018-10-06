@@ -11,6 +11,19 @@ For example, calling convertColumn('C4') should return 2 as the 'C' column is th
 JavaScript arrays start at 0, that would make 2 the third column.
 */
 
+const GRID = [
+  ["", "", "", "^", "", "", "", "", "", ""],
+  ["", "", "v", "", "~", "", "", "", "", ""],
+  ["", "v", "", "", "^", "^", "", "", "", ""],
+  ["", "", "", "", "^", "^", "", "", "", ""],
+  ["", "", "", "", "", "", "", "", "v", ""],
+  ["", "", "", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", "", "", ""],
+  ["", "^", "~", "~", "", "", "", "^", "", ""],
+  ["", "^", "", "~", "~", "", "", "", "", ""],
+  ["", "^", "", "", "~", "~", "", "", "", ""],
+];
+
 function countRows() {
   let rowsNum = GRID.length
   return rowsNum
@@ -41,4 +54,3 @@ function convertColumn(coordinate) {
   
   return alphabets.indexOf(coordinate[0])
 }
-console.log(convertColumn('C4'))

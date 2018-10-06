@@ -9,6 +9,19 @@ this grid, it should return 100, but again make sure that is a calculated value 
 type in for your function to return. We want to make all the other lighthouse operators jealous.
 */
 
+const GRID = [
+  ["", "", "", "^", "", "", "", "", "", ""],
+  ["", "", "v", "", "~", "", "", "", "", ""],
+  ["", "v", "", "", "^", "^", "", "", "", ""],
+  ["", "", "", "", "^", "^", "", "", "", ""],
+  ["", "", "", "", "", "", "", "", "v", ""],
+  ["", "", "", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", "", "", ""],
+  ["", "^", "~", "~", "", "", "", "^", "", ""],
+  ["", "^", "", "~", "~", "", "", "", "", ""],
+  ["", "^", "", "", "~", "~", "", "", "", ""],
+];
+
 function countRows() {
   let rowsNum = GRID.length
   return rowsNum
