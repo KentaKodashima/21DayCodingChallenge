@@ -38,7 +38,6 @@ function allRocks() {
   }
   return rocks
 }
-console.log(allRocks())
 
 function allCurrents() {
   let currents = []
@@ -53,4 +52,3 @@ function allCurrents() {
   }
   return currents
 }
-console.log(allCurrents())
