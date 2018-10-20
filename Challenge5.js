@@ -35,13 +35,6 @@ function countColumns() {
   return colNum
 }
 
-function gridSize() {
-  let rowCount = countRows()
-  let colCount = countColumns()
-
-  return "" + colCount + " x " + rowCount
-}
-
 function totalCells() {
   let rowCount = countRows()
   let colCount = countColumns()
